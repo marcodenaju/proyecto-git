@@ -37,31 +37,19 @@ h1 {
 }
 
 .navbar a:hover {
-color:#f4791f
-}
-
-/* .bg-negro {
-    background-color: #ffffff;
-    color: #000000;
-} */
-
-.btn-gris:hover {
-    background-color: #aeaeae;
-    color: #252422;
-    border: #b4811b;
-}
-
-.c-azul {
-    color:cornflowerblue
+    color: #799f0c
 }
 
 /* ------img fondo------- */
 
 .div-fondo {
-    background: #659999;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* portada con efecto parallax */
@@ -125,7 +113,7 @@ color:#f4791f
 }
 
 .tarjeta button {
-    background-color: rgba(240, 170, 40, 0.702);
+    background-color: rgba(98, 98, 98, 0.702);
     border-radius: 5px;
     font-size: 14px;
     position: absolute;
@@ -137,7 +125,7 @@ color:#f4791f
     display: flex;
     flex-direction: column;
     padding: 20px;
-    
+
 }
 
 .palabra-destacada {
@@ -155,8 +143,8 @@ a {
     color: #000000;
 }
 
-a:hover {
-    color: #b4811b;
+button a:hover {
+    background-color: #ece9e6;
 }
 
 @media (min-width: 768px) {
@@ -174,6 +162,27 @@ a:hover {
         flex-direction: row;
     }
 
+}
+
+
+/* ----seccion servicios---- */
+
+.btn-gris {
+    background-color:#878686;
+    color: #ece9e6
+}
+
+.btn-gris:hover {
+    background-color: #dedede;
+    color: #799f0c
+}
+
+.c-azul {
+    color:#799f0c
+}
+
+.c-gris {
+    color: #878686;
 }
 
 
@@ -297,7 +306,7 @@ h4 {
     .texto-redes {
         display: none
     }
-    
+
 }
 
 
