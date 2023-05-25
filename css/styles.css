@@ -147,11 +147,37 @@ button a:hover {
     background-color: #ece9e6;
 }
 
+
 @media (min-width: 768px) {
     .section {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .tarjeta {
+        width: 480px;
+        height: 600px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: 375px;
+    }
+
+    .tarjeta button {
+        background-color: rgba(98, 98, 98, 0.702);
+        border-radius: 5px;
+        font-size: 14px;
+        position: absolute;
+        left: 225px;
+        top: 540px;
+    
     }
 
 }
@@ -160,9 +186,36 @@ button a:hover {
     .section {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        margin: 60px;
+        gap: 80px;
     }
 
-}
+    .tarjeta {
+        width: 320px;
+        height: 430px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+    
+    .tarjeta img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .tarjeta button {
+        background-color: rgba(98, 98, 98, 0.702);
+        border-radius: 5px;
+        font-size: 14px;
+        position: absolute;
+        left: 140px;
+        top: 400px;
+    }
+
+    }
 
 
 /* ----seccion servicios---- */
