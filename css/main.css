@@ -1,0 +1,481 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.btn__ligth {
+  background-color: aliceblue;
+  border: none;
+  color: azure;
+}
+.btn__ligth:hover {
+  background-color: aquamarine;
+}
+.btn__black {
+  background-color: black;
+  color: beige;
+}
+.btn__black:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: white;
+  color: black;
+}
+
+/* comentarios con alt + shift + a */
+/* o seleccionando: control + barra (/) */
+h1 {
+  font-family: "Amatic SC";
+  font-size: 30px;
+  color: #000000;
+}
+
+.navbar {
+  font-family: "Urbanist";
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar a:hover {
+  color: #799f0c;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px;
+  gap: 80px;
+}
+
+.tarjeta {
+  width: 320px;
+  height: 430px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+}
+.tarjeta button {
+  background-color: rgba(98, 98, 98, 0.702);
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  left: 140px;
+  top: 400px;
+}
+.tarjeta-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.palabra-destacada {
+  font-size: 20px;
+  color: #252422;
+}
+
+h2 {
+  font-size: 18px;
+  color: #aeaeae;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #799f0c;
+}
+
+button a:hover {
+  background-color: #ece9e6;
+}
+
+@media (min-width: 768px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tarjeta {
+    width: 480px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  .tarjeta img {
+    width: 100%;
+    height: 375px;
+  }
+  .tarjeta button {
+    background-color: rgba(98, 98, 98, 0.702);
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    left: 225px;
+    top: 540px;
+  }
+}
+@media (min-width: 1024px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 60px;
+    gap: 60px;
+  }
+  .tarjeta {
+    width: 320px;
+    height: 430px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  .tarjeta img {
+    width: 100%;
+    height: 250px;
+  }
+  .tarjeta button {
+    background-color: rgba(212, 212, 212, 0.702);
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    left: 140px;
+    top: 400px;
+  }
+}
+.footer {
+  /* font-family: 'Urbanist'; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+footer div a {
+  color: #aeaeae;
+}
+footer div a:hover {
+  color: #799f0c;
+}
+
+h3,
+h4 {
+  font-size: 12px;
+  color: #aeaeae;
+}
+
+.texto-redes {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .texto-redes {
+    display: none;
+  }
+}
+body {
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  color: #252422;
+  background-color: #fffcf2;
+  overflow-x: hidden;
+  margin: 0%;
+}
+
+/* ------img fondo------- */
+.div-fondo {
+  background: #ECE9E6;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* portada con efecto parallax */
+.portada-index {
+  background-color: #ffffff;
+  height: 850px;
+  background-image: url("../img/grafica.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* -----whatsapp----- */
+.caja-wp {
+  background-color: #00bb2d;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  z-index: 1;
+}
+.caja-wp i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.sobre-nos {
+  padding: 16px;
+}
+
+.sobre-tile {
+  padding: 8px 0;
+}
+
+@media (min-width: 768px) {
+  .sobre-article {
+    max-width: 992px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto 0;
+  }
+}
+.sobre-productos {
+  padding: 16px;
+}
+
+.sobre-titulo {
+  padding: 8px 0;
+}
+
+.sobre-articulo-texto {
+  padding: 16px 0;
+}
+
+.card-sobre-nosotros {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+}
+
+.card-cont-icon {
+  background-color: #b4811b;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cont-icon i {
+  font-size: 1.5rem;
+}
+
+.cont-img-nosotros {
+  width: 100%;
+}
+
+/* .cont-vid-servicios video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+} */
+@media (min-width: 768px) {
+  .sobre-articulo {
+    max-width: 992px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 0;
+  }
+  .cont-card-nosotros {
+    grid-row: 2/4;
+  }
+  .cont-vid-productos {
+    grid-row: 1/4;
+  }
+  .cont-vid-productos video {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .sobre-articulo {
+    max-width: 992px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 0;
+  }
+  .cont-card-nosotros {
+    grid-row: 2/4;
+  }
+  /* .cont-img-nosotros {
+          grid-row: 1/4;
+      } */
+  .cont-img-nosotros img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cont-vid-productos {
+    grid-row: 1/4;
+  }
+  .cont-vid-productos video {
+    width: 700px;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.btn-gris {
+  background-color: #878686;
+  color: #ece9e6;
+}
+
+.btn-gris:hover {
+  background-color: #dedede;
+  color: #799f0c;
+}
+
+.c-azul {
+  color: cornflowerblue;
+}
+
+.c-gris {
+  color: #878686;
+}
+
+.container-form {
+  margin-top: 90px;
+}
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #000000;
+  font-weight: 700;
+}
+.container-form a i {
+  color: #b4811b;
+  margin-right: 10px;
+}
+.container-form form .campo,
+.container-form textarea {
+  width: 767px;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid color rgb(0, 0, 0);
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form .campo textarea,
+.container-form textarea textarea {
+  width: 767px;
+  min-height: 140px;
+  max-height: 150px;
+  border: 1px solid color rgb(0, 0, 0);
+}
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #b4811b;
+  color: #dedede;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover {
+  background: #dedede;
+}
+
+@media (min-width: 768px) {
+  .container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 90px;
+  }
+  .container-form .campo,
+  .container-form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid color rgb(0, 255, 64);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+  }
+  .container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */

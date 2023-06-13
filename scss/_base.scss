@@ -1,0 +1,102 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+$font-logo: 'Amatic SC', cursive;
+$font-principal: 'Urbanist', sans-serif;
+$color-hover: #799f0c;
+
+%btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+$grey: grey;
+$black: black;
+$white: white;
+
+// -----------plantilla btn y extend------------
+
+.btn {
+    @extend %btn;
+
+    &__ligth {
+        background-color: aliceblue;
+        border: none;
+        color: azure;
+
+        &:hover {
+            background-color: aquamarine;
+        }
+    }
+
+    &__black {
+        background-color: black;
+        color: beige;
+
+        &:hover {
+            background-color: bisque;
+            color: $black;
+        }
+    }
+}
+
+
+// -----------mixins-----------
+
+@mixin flexbox ($justify: center, $align: center ) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+    }
+    
+    .contenedor {
+        @include flexbox();
+    }
+    
+
+// @mixin flex-center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .contenedor {
+//     @include flex-center;
+// }
+
+@mixin color-tipo($color) {
+    background-color: $color;
+
+    @if lightness($color)>50 {
+        color: black;
+    }
+
+    @else {
+        color: white;
+    }
+}
+
+header {
+    @include color-tipo(white)
+}   
+
+
+
+
+/* comentarios con alt + shift + a */
+/* o seleccionando: control + barra (/) */

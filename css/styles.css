@@ -15,14 +15,8 @@ font-family: 'Urbanist', sans-serif; */
 /* comentarios con alt + shift + a */
 /* o seleccionando: control + barra (/) */
 
-body {
-    font-family: 'Urbanist';
-    font-size: 16px;
-    color: #252422;
-    background-color: #fffcf2;
-    overflow-x: hidden;
-    margin: 0%;
-}
+
+/*------------------------header---------------------------*/
 
 h1 {
     font-family: "Amatic SC";
@@ -31,6 +25,7 @@ h1 {
 }
 
 .navbar {
+    font-family: "Urbanist";
     position: sticky;
     top: 0;
     z-index: 1;
@@ -38,6 +33,140 @@ h1 {
 
 .navbar a:hover {
     color: #799f0c
+}
+
+
+
+/*------------------------contacto---------------------------*/
+
+
+.container-form {
+    /* width: 100%;
+    max-width: 1100px; */
+    /* margin: auto; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    /* gap: 50px; */
+    margin-top: 90px;
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.container-form a i {
+    color: #b4811b;
+    margin-right: 10px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 767px;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid color rgb(0, 0, 0);
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    width: 767px;
+    min-height: 140px;
+    max-height: 150px;
+    border: 1px solid color rgb(0, 0, 0);
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #b4811b;
+    color: #dedede;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background: #dedede;
+}
+
+/* @media (min-width: 1024px) {
+    .container-form {
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 90px;
+    }
+
+} */
+
+@media (min-width: 768px) {
+    .container-form {
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 90px;
+    }
+    .container-form form .campo,
+    textarea {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 15px;
+        border: 1px solid color rgb(0, 255, 64);
+        margin-bottom: 20px;
+        border-radius: 3px;
+        outline: 0px;
+    }
+    
+    .container-form form textarea {
+        max-width: 530px;
+        min-width: 530px;
+        min-height: 140px;
+        max-height: 150px;
+    }
+
+
+
+}
+
+
+
+
+/*------------------------index---------------------------*/
+
+body {
+    font-family: 'Urbanist';
+    font-size: 16px;
+    color: #252422;
+    background-color: #fffcf2;
+    overflow-x: hidden;
+    margin: 0%;
 }
 
 /* ------img fondo------- */
@@ -87,7 +216,7 @@ h1 {
 }
 
 
-/* ------Tarjetas con flexbox------ */
+/* -----------------------Tarjetas con flexbox----------------------- */
 
 .section {
     display: flex;
@@ -143,6 +272,10 @@ a {
     color: #000000;
 }
 
+a:hover {
+    color: #799f0c;
+}
+
 button a:hover {
     background-color: #ece9e6;
 }
@@ -177,18 +310,18 @@ button a:hover {
         position: absolute;
         left: 225px;
         top: 540px;
-    
+
     }
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 60px;
-        gap: 80px;
+        gap: 60px;
     }
 
     .tarjeta {
@@ -200,14 +333,14 @@ button a:hover {
         text-align: center;
         position: relative;
     }
-    
+
     .tarjeta img {
         width: 100%;
         height: 250px;
     }
-    
+
     .tarjeta button {
-        background-color: rgba(98, 98, 98, 0.702);
+        background-color: rgba(212, 212, 212, 0.702);
         border-radius: 5px;
         font-size: 14px;
         position: absolute;
@@ -215,13 +348,13 @@ button a:hover {
         top: 400px;
     }
 
-    }
+}
 
 
-/* ----seccion servicios---- */
+/* ---------------------seccion servicios---------------------------------- */
 
 .btn-gris {
-    background-color:#878686;
+    background-color: #878686;
     color: #ece9e6
 }
 
@@ -231,7 +364,7 @@ button a:hover {
 }
 
 .c-azul {
-    color:#799f0c
+    color: cornflowerblue;
 }
 
 .c-gris {
@@ -239,9 +372,29 @@ button a:hover {
 }
 
 
-/* ----------Otras secciones----------- */
+/* -------------------------seccion nosotros--------------------------------- */
 
-.sobre-nosotros {
+.sobre-nos {
+    padding: 16px;
+}
+
+.sobre-tile {
+    padding: 8px 0;
+}
+
+
+@media (min-width: 768px) {
+    .sobre-article {
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto 0;
+    }
+}
+
+/* -------------------------seccion productos--------------------------------- */
+
+.sobre-productos {
     padding: 16px;
 }
 
@@ -261,8 +414,8 @@ button a:hover {
 
 .card-cont-icon {
     background-color: #b4811b;
-    min-width: 50px;
-    height: 50px;
+    min-width: 40px;
+    height: 40px;
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -274,40 +427,69 @@ button a:hover {
 }
 
 .cont-img-nosotros {
-    width: 100%;
+    width: 100%
 }
 
-.cont-vid-servicios video {
+/* .cont-vid-servicios video {
     width: 100%;
-}
+    height: 500px;
+    object-fit: cover;
+} */
 
 @media (min-width: 768px) {
     .sobre-articulo {
         max-width: 992px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin: auto 0;
     }
 
     .cont-card-nosotros {
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
 
-    .cont-img-nosotros {
-        grid-row: 1/3;
+    .cont-vid-productos {
+        grid-row: 1/4;
     }
+
+    .cont-vid-productos video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .sobre-articulo {
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto 0;
+    }
+
+    .cont-card-nosotros {
+        grid-row: 2/4;
+    }
+
+    /* .cont-img-nosotros {
+            grid-row: 1/4;
+        } */
 
     .cont-img-nosotros img {
         height: 500px;
         object-fit: cover;
     }
 
-    .cont-vid-servicios {
-        grid-row: 1/3;
+    .cont-vid-productos {
+        grid-row: 1/4;
     }
 
-    .cont-vid-servicios video {
-        width: 100%;
+    .cont-vid-productos video {
+        width: 700px;
         height: 500px;
         object-fit: cover;
     }
@@ -315,7 +497,7 @@ button a:hover {
 }
 
 
-/* -------------footer-------------- */
+/* ----------------------------------footer------------------------------- */
 
 .footer {
     /* font-family: 'Urbanist'; */
@@ -334,7 +516,7 @@ footer div a {
 }
 
 footer div a:hover {
-    color: #000000
+    color: #799f0c;
 }
 
 h3,
@@ -344,7 +526,7 @@ h4 {
 }
 
 .texto-redes {
-    display: flex
+    display: flex;
 }
 
 
@@ -357,7 +539,7 @@ h4 {
     }
 
     .texto-redes {
-        display: none
+        display: none;
     }
 
 }

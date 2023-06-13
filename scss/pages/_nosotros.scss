@@ -1,0 +1,17 @@
+.sobre-nos {
+    padding: 16px;
+}
+
+.sobre-tile {
+    padding: 8px 0;
+}
+
+
+@media (min-width: 768px) {
+    .sobre-article {
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto 0;
+    }
+}

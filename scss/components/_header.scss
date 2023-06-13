@@ -1,0 +1,20 @@
+
+
+h1 {
+    font-family: "Amatic SC";
+    font-size: 30px;
+    color: #000000;
+}
+
+
+.navbar {
+    font-family: "Urbanist";
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    & a:hover {
+        color: $color-hover;
+    }
+}
+
