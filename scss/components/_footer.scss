@@ -1,10 +1,8 @@
 
 .footer {
-    /* font-family: 'Urbanist'; */
     background-color: #ffffff;
     @include flexbox();
     flex-direction: column;
-    // align-items: center;
     text-align: center;
     padding: 100px;
     gap: 50px;

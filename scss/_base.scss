@@ -87,16 +87,6 @@ $white: white;
 }
 
 
-// @mixin flex-center {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .contenedor {
-//     @include flex-center;
-// }
-
 @mixin color-tipo($color) {
     background-color: $color;
 
