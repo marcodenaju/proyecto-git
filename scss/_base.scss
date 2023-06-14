@@ -11,9 +11,9 @@ ol {
 
 $font-logo: 'Amatic SC', cursive;
 $font-principal: 'Urbanist', sans-serif;
-$color-titulo: #799f0c;
-$color-hover: #00B2CA;
-$color-btn: #F79256;
+$color-titulo: #1D4E89;
+$color-hover: #00B2CA; 
+$color-btn: #7DCFB6;
 
 a {
     text-decoration: none;
@@ -31,7 +31,7 @@ a {
     border: none;
     outline: 0px;
     background: $color-btn;
-    color: #dedede;
+    color: #ffffff;
     border-radius: 20px;
     cursor: pointer;
     transition: all 300ms ease;
