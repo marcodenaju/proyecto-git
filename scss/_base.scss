@@ -11,15 +11,26 @@ ol {
 
 $font-logo: 'Amatic SC', cursive;
 $font-principal: 'Urbanist', sans-serif;
-$color-titulo: rgb(252, 62, 110);
-$color-hover: #799f0c;
+$color-titulo: #799f0c;
+$color-hover: #00B2CA;
+$color-btn: #F79256;
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+
 
 %btn {
     padding: 15px;
     font-size: 16px;
     border: none;
     outline: 0px;
-    background: #b4811b;
+    background: $color-btn;
     color: #dedede;
     border-radius: 20px;
     cursor: pointer;

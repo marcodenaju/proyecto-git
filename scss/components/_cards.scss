@@ -7,9 +7,9 @@
 
 .tarjeta {
     width: 320px;
-    height: 430px;
+    height: 450px;
+    border-radius: 5px;
     background-color: #ffffff;
-    border-radius: 10px;
     overflow: hidden;
     text-align: center;
     position: relative;
@@ -17,33 +17,20 @@
     & img {
         width: 100%;
         height: 250px;
+        margin-bottom: 15px;
     }
 
     &-cont {
+        color: $grey;
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
     }
-
 }
 
 .palabra-destacada {
     font-size: 20px;
-    color: #252422;
-}
-
-h2 {
-    font-size: 18px;
-    color: #aeaeae;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-
-    &:hover {
-        color: $color-hover;
-    }
+    color: #1D4E89;
 }
 
 .button {
@@ -51,7 +38,7 @@ a {
     font-size: 16px;
     border: none;
     outline: 0px;
-    background: #b4811b;
+    background: $color-btn;
     color: #dedede;
     border-radius: 20px;
     cursor: pointer;
@@ -62,6 +49,10 @@ a {
         color: $color-hover;
     }
 }
+.btn-card {
+    margin-top: 10px;
+}
+
 
 @media (min-width: 768px) {
     .section {
@@ -87,7 +78,7 @@ a {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .section {
         @include flexbox();
         flex-direction: row;
@@ -98,7 +89,7 @@ a {
 
     .tarjeta {
         width: 320px;
-        height: 430px;
+        height: 450px;
         background-color: #ffffff;
         border-radius: 10px;
         overflow: hidden;

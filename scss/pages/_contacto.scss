@@ -15,6 +15,7 @@
     & p {
         @include flexbox();
         font-size: 17px;
+        color: grey;
         line-height: 1.6;
         margin-bottom: 30px;
     }
@@ -33,7 +34,7 @@
         }
 
         & i {
-            color: #b4811b;
+            color: #F79256;
             margin-right: 10px;
 
             &:hover {
@@ -73,7 +74,7 @@
         font-size: 16px;
         border: none;
         outline: 0px;
-        background: #b4811b;
+        background: $color-btn;
         color: #dedede;
         border-radius: 20px;
         cursor: pointer;
