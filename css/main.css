@@ -462,6 +462,10 @@ body {
   color: #00B2CA;
 }
 
+.mapa {
+  margin-top: 60px;
+}
+
 @media (min-width: 768px) {
   .container-form {
     width: 100%;
