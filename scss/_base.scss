@@ -11,17 +11,24 @@ ol {
 
 $font-logo: 'Amatic SC', cursive;
 $font-principal: 'Urbanist', sans-serif;
+$color-titulo: rgb(252, 62, 110);
 $color-hover: #799f0c;
 
 %btn {
-    display: inline-block;
-    font-size: 15px;
-    padding: 12px 40px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #b4811b;
+    color: #dedede;
+    border-radius: 20px;
     cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 30px;
-    margin: 5px;
+    transition: all 300ms ease;
+
+    &:hover {
+        background: #dedede;
+        color: $color-hover;
+    }
 }
 
 $grey: grey;
@@ -57,17 +64,17 @@ $white: white;
 
 // -----------mixins-----------
 
-@mixin flexbox ($justify: center, $align: center ) {
+@mixin flexbox ($justify: center, $align: center) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
-    
-    }
-    
-    .contenedor {
-        @include flexbox();
-    }
-    
+
+}
+
+.contenedor {
+    @include flexbox();
+}
+
 
 // @mixin flex-center {
 //     display: flex;
@@ -93,7 +100,7 @@ $white: white;
 
 header {
     @include color-tipo(white)
-}   
+}
 
 
 

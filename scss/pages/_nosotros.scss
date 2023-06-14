@@ -14,18 +14,25 @@
 // .img-nos {
 //     @include flexbox
 // }
+.c-title {
+  font-size: 35px;
+  color: $color-titulo;
+}
 
 .c-gris {
-    color: #878686;
+  font-size: 17px;
+  color: #878686;
 }
 
 .bg-blue {
-    color: cadetblue;
+  color: cadetblue;
 }
 
+// -------------------animacion---------------------
+
 .rotate-scale-up {
-	-webkit-animation: rotate-scale-up 2s linear both;
-	        animation: rotate-scale-up 2s linear both;
+  -webkit-animation: rotate-scale-up 2s linear both;
+  animation: rotate-scale-up 2s linear both;
 }
 
 /* ----------------------------------------------
@@ -40,35 +47,40 @@
  * animation rotate-scale-up
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
-  @keyframes rotate-scale-up {
-    0% {
-      -webkit-transform: scale(1) rotateZ(0);
-              transform: scale(1) rotateZ(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateZ(180deg);
-              transform: scale(2) rotateZ(180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateZ(360deg);
-              transform: scale(1) rotateZ(360deg);
-    }
+
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
-  
+
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
 
 
 // @media (min-width: 768px) {
