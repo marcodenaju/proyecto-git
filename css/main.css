@@ -69,7 +69,7 @@ h1 {
 }
 
 .navbar {
-  font-family: "Urbanist";
+  font-family: "Urbanist", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -109,8 +109,9 @@ h1 {
 }
 
 .palabra-destacada {
+  font-family: "Figtree", sans-serif;
   font-size: 20px;
-  color: #1D4E89;
+  color: #00B2CA;
 }
 
 .button {
@@ -280,8 +281,9 @@ body {
 }
 
 .c-title {
-  font-size: 35px;
-  color: #1D4E89;
+  font-size: 30px;
+  font-family: "Figtree", sans-serif;
+  color: #00B2CA;
 }
 
 .c-gris {
@@ -309,9 +311,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-family: "Figtree", sans-serif;
+  font-size: 30px;
   font-weight: bold;
-  color: #1D4E89;
+  color: #00B2CA;
 }
 
 .sobre-articulo-texto {
@@ -358,7 +361,8 @@ body {
 }
 
 .c-azul {
-  color: #1D4E89;
+  font-family: "Figtree", sans-serif;
+  color: #00B2CA;
   font-size: 30px;
 }
 
@@ -375,9 +379,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
-  font-size: 35px;
-  color: #1D4E89;
-  font-weight: bold;
+  font-family: "Figtree", sans-serif;
+  font-size: 30px;
+  color: #00B2CA;
 }
 .container-form p {
   display: flex;
@@ -463,7 +467,6 @@ body {
   .container-form h2 {
     display: inline-block;
     margin-bottom: 15px;
-    font-size: 35px;
   }
   .container-form p {
     line-height: 1.6;

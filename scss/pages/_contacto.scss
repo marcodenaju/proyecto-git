@@ -4,9 +4,9 @@
     & h2 {
         @include flexbox();
         margin-bottom: 15px;
-        font-size: 35px;
+        font-family: $font-titulo;
+        font-size: 30px;
         color: $color-titulo;
-        font-weight: bold
     }
 
     & p {
@@ -100,7 +100,6 @@
         & h2 {
             display: inline-block;
             margin-bottom: 15px;
-            font-size: 35px;
         }
 
         & p {
