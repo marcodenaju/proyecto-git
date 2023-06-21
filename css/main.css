@@ -286,7 +286,7 @@ body {
   color: #00B2CA;
 }
 
-.c-gris {
+.c-text {
   font-size: 17px;
   color: grey;
 }
@@ -344,6 +344,17 @@ body {
        object-fit: cover;
   }
 }
+.c-azul {
+  font-family: "Figtree", sans-serif;
+  color: #00B2CA;
+  font-size: 30px;
+}
+
+.c-gris {
+  font-size: 17px;
+  color: grey;
+}
+
 .btn-gris {
   padding: 15px;
   font-size: 16px;
@@ -358,17 +369,6 @@ body {
 .btn-gris:hover {
   background: #dedede;
   color: #F79256;
-}
-
-.c-azul {
-  font-family: "Figtree", sans-serif;
-  color: #00B2CA;
-  font-size: 30px;
-}
-
-.c-gris {
-  font-size: 17px;
-  color: grey;
 }
 
 .container-form {

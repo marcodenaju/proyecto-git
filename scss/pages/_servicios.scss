@@ -1,3 +1,14 @@
+.c-azul {
+    font-family: $font-titulo;
+    color: $color-titulo;
+    font-size: 30px;
+}
+
+.c-gris {
+    font-size: 17px;
+    color:grey
+}
+
 .btn-gris {
     padding: 15px;
     font-size: 16px;
@@ -15,14 +26,5 @@
     }
 }
 
-.c-azul {
-    font-family: $font-titulo;
-    color: $color-titulo;
-    font-size: 30px;
-}
 
-.c-gris {
-    font-size: 17px;
-    color:grey
-}
 
