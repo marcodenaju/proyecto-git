@@ -1,6 +1,6 @@
 .sobre-productos {
     padding: 16px;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 .sobre-titulo {
@@ -14,6 +14,7 @@
 .sobre-articulo-texto {
     @include flexbox();
     font-size: 17px;
+    font-weight: bold;
     color: grey;
 }
 

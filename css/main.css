@@ -64,7 +64,7 @@ header {
 /* o seleccionando: control + barra (/) */
 h1 {
   font-family: "Amatic SC";
-  font-size: 30px;
+  font-size: 40px;
   color: #000000;
 }
 
@@ -179,7 +179,7 @@ h1 {
   }
 }
 .footer {
-  background-color: #ffffff;
+  background-color: #4e4d4d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +304,7 @@ body {
 }
 .sobre-productos {
   padding: 16px;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
 .sobre-titulo {
@@ -322,6 +322,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 17px;
+  font-weight: bold;
   color: grey;
 }
 
@@ -372,7 +373,7 @@ body {
 }
 
 .container-form {
-  margin-top: 90px;
+  margin-top: 60px;
 }
 .container-form h2 {
   display: flex;
