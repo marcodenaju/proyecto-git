@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #F79256;
+  color: #00cceb;
 }
 
 .btn {
@@ -21,7 +21,7 @@ a:hover {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #7DCFB6;
+  background: #000000;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -29,7 +29,7 @@ a:hover {
 }
 .btn:hover {
   background: #dedede;
-  color: #F79256;
+  color: #00cceb;
 }
 
 .btn__ligth {
@@ -63,7 +63,7 @@ header {
 /* comentarios con alt + shift + a */
 /* o seleccionando: control + barra (/) */
 h1 {
-  font-family: "Amatic SC";
+  font-family: "Urbanist", sans-serif;
   font-size: 40px;
   color: #000000;
 }
@@ -75,7 +75,7 @@ h1 {
   z-index: 1;
 }
 .navbar a:hover {
-  color: #F79256;
+  color: #00cceb;
 }
 
 .section {
@@ -111,7 +111,7 @@ h1 {
 .palabra-destacada {
   font-family: "Figtree", sans-serif;
   font-size: 20px;
-  color: #00B2CA;
+  color: #023a41;
 }
 
 .button {
@@ -119,7 +119,7 @@ h1 {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #7DCFB6;
+  background: #000000;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -127,7 +127,7 @@ h1 {
 }
 .button:hover {
   background: #dedede;
-  color: #F79256;
+  color: #00cceb;
 }
 
 .btn-card {
@@ -179,7 +179,7 @@ h1 {
   }
 }
 .footer {
-  background-color: #4e4d4d;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +194,7 @@ footer div a {
   color: #aeaeae;
 }
 footer div a:hover {
-  color: #F79256;
+  color: #00cceb;
 }
 
 h2 {
@@ -253,7 +253,7 @@ body {
 .portada-index {
   background-color: #ffffff;
   height: 850px;
-  background-image: url("../img/grafica.png");
+  background-image: url("../img/esm3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -283,7 +283,7 @@ body {
 .c-title {
   font-size: 30px;
   font-family: "Figtree", sans-serif;
-  color: #00B2CA;
+  color: #023a41;
 }
 
 .c-text {
@@ -314,7 +314,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: #00B2CA;
+  color: #023a41;
 }
 
 .sobre-articulo-texto {
@@ -347,7 +347,7 @@ body {
 }
 .c-azul {
   font-family: "Figtree", sans-serif;
-  color: #00B2CA;
+  color: #023a41;
   font-size: 30px;
 }
 
@@ -361,7 +361,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #7DCFB6;
+  background: #000000;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -369,7 +369,7 @@ body {
 }
 .btn-gris:hover {
   background: #dedede;
-  color: #F79256;
+  color: #00cceb;
 }
 
 .container-form {
@@ -382,7 +382,7 @@ body {
   margin-bottom: 15px;
   font-family: "Figtree", sans-serif;
   font-size: 30px;
-  color: #00B2CA;
+  color: #023a41;
 }
 .container-form p {
   display: flex;
@@ -405,14 +405,14 @@ body {
   font-weight: 700;
 }
 .container-form a:hover {
-  color: #F79256;
+  color: #00cceb;
 }
 .container-form a i {
-  color: #F79256;
+  color: #d2d2d2;
   margin-right: 10px;
 }
 .container-form a i:hover {
-  color: #F79256;
+  color: #00cceb;
 }
 .container-form form .campo,
 .container-form textarea {
@@ -440,7 +440,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #7DCFB6;
+  background: #000000;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -448,7 +448,7 @@ body {
 }
 .container-form .btn-enviar:hover {
   background: #dedede;
-  color: #F79256;
+  color: #00cceb;
 }
 
 .mapa {
