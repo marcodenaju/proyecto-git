@@ -9,11 +9,17 @@ ol {
     list-style: none;
 }
 
+@font-face {
+    font-family: Aktiv;
+    src: url('../fonts/AktivGrotesk-Regular.ttf');
+}
+
+
 $font-logo: 'Amatic SC', cursive;
-$font-principal: 'Urbanist', sans-serif;
+$font-principal: 'Aktiv', sans-serif;
 $font-titulo: 'Figtree', sans-serif;
 $color-titulo: #1b263b;
-$color-hover: #778da9;
+$color-hover: #cbcbcb;
 $color-btn: #0d1b2a;
 
 a {

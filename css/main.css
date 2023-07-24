@@ -9,11 +9,15 @@ ol {
   list-style: none;
 }
 
+@font-face {
+  font-family: Aktiv;
+  src: url("../fonts/AktivGrotesk-Regular.ttf");
+}
 a {
   text-decoration: none;
 }
 a:hover {
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .btn {
@@ -29,7 +33,7 @@ a:hover {
 }
 .btn:hover {
   background: #dedede;
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .btn__ligth {
@@ -63,19 +67,19 @@ header {
 /* comentarios con alt + shift + a */
 /* o seleccionando: control + barra (/) */
 h1 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 40px;
+  font-family: "Aktiv", sans-serif;
+  font-size: 30px;
   color: #000000;
 }
 
 .navbar {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Aktiv", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 .navbar a:hover {
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .section {
@@ -127,7 +131,7 @@ h1 {
 }
 .button:hover {
   background: #dedede;
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .btn-card {
@@ -179,7 +183,7 @@ h1 {
   }
 }
 .footer {
-  background-color: #000000;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,21 +195,21 @@ h1 {
 }
 
 footer div a {
-  color: #aeaeae;
+  color: #000000;
 }
 footer div a:hover {
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 h2 {
   font-size: 18px;
-  color: #aeaeae;
+  color: #000000;
 }
 
 h3,
 h4 {
   font-size: 12px;
-  color: #aeaeae;
+  color: #000000;
 }
 
 .texto-redes {
@@ -221,6 +225,10 @@ h4 {
   gap: 10px;
 }
 
+.texto-redes {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -232,7 +240,7 @@ h4 {
   }
 }
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Aktiv", sans-serif;
   font-size: 16px;
   color: #252422;
   background-color: #fffcf2;
@@ -242,23 +250,10 @@ body {
 
 /* ------img fondo------- */
 .div-fondo {
-  background: #ECE9E6;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffffff;
 }
 
 /* portada con efecto parallax */
-.portada-index {
-  background-color: #ffffff;
-  height: 850px;
-  background-image: url("../img/esm3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 /* -----whatsapp----- */
 .caja-wp {
   background-color: #00bb2d;
@@ -369,7 +364,7 @@ body {
 }
 .btn-gris:hover {
   background: #dedede;
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .container-form {
@@ -405,14 +400,14 @@ body {
   font-weight: 700;
 }
 .container-form a:hover {
-  color: #778da9;
+  color: #cbcbcb;
 }
 .container-form a i {
-  color: #d2d2d2;
+  color: #4e4e4e;
   margin-right: 10px;
 }
 .container-form a i:hover {
-  color: #778da9;
+  color: #cbcbcb;
 }
 .container-form form .campo,
 .container-form textarea {
@@ -448,7 +443,7 @@ body {
 }
 .container-form .btn-enviar:hover {
   background: #dedede;
-  color: #778da9;
+  color: #cbcbcb;
 }
 
 .mapa {

@@ -1,6 +1,6 @@
 
 .footer {
-    background-color: #000000;
+    background-color: #ffffff;
     @include flexbox();
     flex-direction: column;
     text-align: center;
@@ -10,7 +10,7 @@
 }
 
 footer div a {
-    color: #aeaeae;
+    color: #000000;
 
     &:hover {
         color:$color-hover
@@ -19,13 +19,13 @@ footer div a {
 
 h2 {
     font-size: 18px;
-    color: #aeaeae;
+    color: #000000;
 }
 
 h3,
 h4 {
     font-size: 12px;
-    color: #aeaeae;
+    color: #000000;
 }
 
 .texto-redes {
@@ -35,6 +35,10 @@ h4 {
 .link-redes {
     @include flexbox();
     gap: 10px;
+}
+
+.texto-redes {
+    display: none;
 }
 
 
