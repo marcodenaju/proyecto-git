@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #00cceb;
+  color: #778da9;
 }
 
 .btn {
@@ -21,7 +21,7 @@ a:hover {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #000000;
+  background: #0d1b2a;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -29,7 +29,7 @@ a:hover {
 }
 .btn:hover {
   background: #dedede;
-  color: #00cceb;
+  color: #778da9;
 }
 
 .btn__ligth {
@@ -75,7 +75,7 @@ h1 {
   z-index: 1;
 }
 .navbar a:hover {
-  color: #00cceb;
+  color: #778da9;
 }
 
 .section {
@@ -111,7 +111,7 @@ h1 {
 .palabra-destacada {
   font-family: "Figtree", sans-serif;
   font-size: 20px;
-  color: #023a41;
+  color: #1b263b;
 }
 
 .button {
@@ -119,7 +119,7 @@ h1 {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #000000;
+  background: #0d1b2a;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -127,7 +127,7 @@ h1 {
 }
 .button:hover {
   background: #dedede;
-  color: #00cceb;
+  color: #778da9;
 }
 
 .btn-card {
@@ -194,7 +194,7 @@ footer div a {
   color: #aeaeae;
 }
 footer div a:hover {
-  color: #00cceb;
+  color: #778da9;
 }
 
 h2 {
@@ -283,7 +283,7 @@ body {
 .c-title {
   font-size: 30px;
   font-family: "Figtree", sans-serif;
-  color: #023a41;
+  color: #1b263b;
 }
 
 .c-text {
@@ -314,7 +314,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: #023a41;
+  color: #1b263b;
 }
 
 .sobre-articulo-texto {
@@ -347,7 +347,7 @@ body {
 }
 .c-azul {
   font-family: "Figtree", sans-serif;
-  color: #023a41;
+  color: #1b263b;
   font-size: 30px;
 }
 
@@ -361,7 +361,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #000000;
+  background: #0d1b2a;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -369,7 +369,7 @@ body {
 }
 .btn-gris:hover {
   background: #dedede;
-  color: #00cceb;
+  color: #778da9;
 }
 
 .container-form {
@@ -382,7 +382,7 @@ body {
   margin-bottom: 15px;
   font-family: "Figtree", sans-serif;
   font-size: 30px;
-  color: #023a41;
+  color: #1b263b;
 }
 .container-form p {
   display: flex;
@@ -405,14 +405,14 @@ body {
   font-weight: 700;
 }
 .container-form a:hover {
-  color: #00cceb;
+  color: #778da9;
 }
 .container-form a i {
   color: #d2d2d2;
   margin-right: 10px;
 }
 .container-form a i:hover {
-  color: #00cceb;
+  color: #778da9;
 }
 .container-form form .campo,
 .container-form textarea {
@@ -440,7 +440,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #000000;
+  background: #0d1b2a;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -448,7 +448,7 @@ body {
 }
 .container-form .btn-enviar:hover {
   background: #dedede;
-  color: #00cceb;
+  color: #778da9;
 }
 
 .mapa {
