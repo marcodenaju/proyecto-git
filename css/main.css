@@ -67,8 +67,8 @@ header {
 /* comentarios con alt + shift + a */
 /* o seleccionando: control + barra (/) */
 h1 {
-  font-family: "ITCavant", sans-serif;
-  font-size: 30px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
   color: #000000;
 }
 
@@ -113,9 +113,9 @@ h1 {
 }
 
 .palabra-destacada {
-  font-family: "Figtree", sans-serif;
+  font-family: "ITCavant", sans-serif;
   font-size: 20px;
-  color: #1b263b;
+  color: #000000;
 }
 
 .button {
@@ -202,13 +202,13 @@ footer div a:hover {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 36px;
   color: #000000;
 }
 
 h3,
 h4 {
-  font-size: 12px;
+  font-size: 16px;
   color: #000000;
 }
 
@@ -216,6 +216,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.list-redes {
+  font-size: 36px;
 }
 
 .link-redes {
@@ -225,18 +229,11 @@ h4 {
   gap: 10px;
 }
 
-.texto-redes {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .texto-redes {
-    display: none;
   }
 }
 body {
@@ -269,7 +266,7 @@ body {
   background-image: url("../img/esm4.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 .portada-index3 {
@@ -304,8 +301,8 @@ body {
 
 .c-title {
   font-size: 30px;
-  font-family: "Figtree", sans-serif;
-  color: #1b263b;
+  font-family: "ITCavant", sans-serif;
+  color: #000000;
 }
 
 .c-text {
@@ -333,10 +330,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Figtree", sans-serif;
+  font-family: "ITCavant", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: #1b263b;
+  color: #000000;
 }
 
 .sobre-articulo-texto {
@@ -368,8 +365,8 @@ body {
   }
 }
 .c-azul {
-  font-family: "Figtree", sans-serif;
-  color: #1b263b;
+  font-family: "ITCavant", sans-serif;
+  color: #000000;
   font-size: 30px;
 }
 
@@ -402,16 +399,17 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
-  font-family: "Figtree", sans-serif;
+  font-family: "ITCavant", sans-serif;
   font-size: 40px;
-  color: #1b263b;
+  color: #000000;
 }
 .container-form p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
-  color: #1b263b;
+  font-family: "ITCavant", sans-serif;
+  font-size: 16px;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 30px;
 }

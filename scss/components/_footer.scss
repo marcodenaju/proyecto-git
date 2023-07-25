@@ -18,18 +18,22 @@ footer div a {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 36px;
     color: #000000;
 }
 
 h3,
 h4 {
-    font-size: 12px;
+    font-size: 16px;
     color: #000000;
 }
 
 .texto-redes {
     @include flexbox();
+}
+
+.list-redes {
+    font-size: 36px;
 }
 
 .link-redes {
@@ -37,9 +41,9 @@ h4 {
     gap: 10px;
 }
 
-.texto-redes {
-    display: none;
-}
+// .texto-redes {
+//     display: none;
+// }
 
 
 @media (min-width: 768px) {
@@ -49,9 +53,9 @@ h4 {
         justify-content: space-between;
     }
 
-    .texto-redes {
-        display: none;
-    }
+    // .texto-redes {
+    //     display: none;
+    // }
 
 }
 
