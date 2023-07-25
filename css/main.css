@@ -10,8 +10,8 @@ ol {
 }
 
 @font-face {
-  font-family: Aktiv;
-  src: url("../fonts/AktivGrotesk-Regular.ttf");
+  font-family: ITCavant;
+  src: url("../fonts/ITC Avant Garde Gothic Pro-Medium.otf");
 }
 a {
   text-decoration: none;
@@ -25,7 +25,7 @@ a:hover {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0D1B2A;
+  background: #ffffff;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -67,13 +67,13 @@ header {
 /* comentarios con alt + shift + a */
 /* o seleccionando: control + barra (/) */
 h1 {
-  font-family: "Aktiv", sans-serif;
+  font-family: "ITCavant", sans-serif;
   font-size: 30px;
   color: #000000;
 }
 
 .navbar {
-  font-family: "Aktiv", sans-serif;
+  font-family: "ITCavant", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -123,7 +123,7 @@ h1 {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0D1B2A;
+  background: #ffffff;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -240,7 +240,7 @@ h4 {
   }
 }
 body {
-  font-family: "Aktiv", sans-serif;
+  font-family: "ITCavant", sans-serif;
   font-size: 16px;
   color: #252422;
   background-color: #fffcf2;
@@ -254,6 +254,33 @@ body {
 }
 
 /* portada con efecto parallax */
+.portada-index {
+  background-color: #ffffff;
+  height: 850px;
+  background-image: url("../img/graf3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.portada-index2 {
+  background-color: #ffffff;
+  height: 850px;
+  background-image: url("../img/esm4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.portada-index3 {
+  background-color: #ffffff;
+  height: 850px;
+  background-image: url("../img/esm2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: unset;
+}
+
 /* -----whatsapp----- */
 .caja-wp {
   background-color: #00bb2d;
@@ -356,7 +383,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0D1B2A;
+  background: #ffffff;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -376,7 +403,7 @@ body {
   align-items: center;
   margin-bottom: 15px;
   font-family: "Figtree", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   color: #1b263b;
 }
 .container-form p {
@@ -384,7 +411,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 17px;
-  color: grey;
+  color: #1b263b;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -414,7 +441,7 @@ body {
   width: 767px;
   padding: 15px 10px;
   font-size: 15px;
-  border: 1px solid color rgb(0, 0, 0);
+  border: 1px solid color #000000;
   margin-bottom: 20px;
   border-radius: 3px;
   outline: 0px;
@@ -424,7 +451,7 @@ body {
   width: 767px;
   min-height: 140px;
   max-height: 150px;
-  border: 1px solid color rgb(0, 0, 0);
+  border: 1px solid color #000000;
 }
 .container-form form textarea {
   min-height: 140px;
@@ -433,16 +460,16 @@ body {
 .container-form .btn-enviar {
   padding: 15px;
   font-size: 16px;
-  border: none;
+  border: 1px solid color #000000;
   outline: 0px;
-  background: #0D1B2A;
-  color: #ffffff;
-  border-radius: 5px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 3px;
   cursor: pointer;
   transition: all 300ms ease;
 }
 .container-form .btn-enviar:hover {
-  background: #dedede;
+  background: #000000;
   color: #E0E1DD;
 }
 

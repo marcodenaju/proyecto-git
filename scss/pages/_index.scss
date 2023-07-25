@@ -16,14 +16,33 @@ body {
 
 /* portada con efecto parallax */
 
-// .portada-index {
-//     background-color: #ffffff;
-//     height: 850px;
-//     background-image: url("../img/esm3.jpg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-attachment: fixed;
-// }
+.portada-index {
+    background-color: #ffffff;
+    height: 850px;
+    background-image: url("../img/graf3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.portada-index2 {
+    background-color: #ffffff;
+    height: 850px;
+    background-image: url("../img/esm4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+}
+
+.portada-index3 {
+    background-color: #ffffff;
+    height: 850px;
+    background-image: url("../img/esm2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:unset;
+}
+
 
 /* -----whatsapp----- */
 

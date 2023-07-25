@@ -10,17 +10,17 @@ ol {
 }
 
 @font-face {
-    font-family: Aktiv;
-    src: url('../fonts/AktivGrotesk-Regular.ttf');
+    font-family: ITCavant;
+    src: url('../fonts/ITC\ Avant\ Garde\ Gothic\ Pro-Medium.otf');
 }
 
 
 $font-logo: 'Amatic SC', cursive;
-$font-principal: 'Aktiv', sans-serif;
+$font-principal: 'ITCavant', sans-serif;
 $font-titulo: 'Figtree', sans-serif;
 $color-titulo: #1b263b;
 $color-hover: #E0E1DD;
-$color-btn: #0D1B2A;
+$color-btn: #ffffff;
 
 a {
     text-decoration: none;
