@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .btn {
@@ -25,7 +25,7 @@ a:hover {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0d1b2a;
+  background: #0D1B2A;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -33,7 +33,7 @@ a:hover {
 }
 .btn:hover {
   background: #dedede;
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .btn__ligth {
@@ -79,7 +79,7 @@ h1 {
   z-index: 1;
 }
 .navbar a:hover {
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .section {
@@ -123,7 +123,7 @@ h1 {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0d1b2a;
+  background: #0D1B2A;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -131,7 +131,7 @@ h1 {
 }
 .button:hover {
   background: #dedede;
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .btn-card {
@@ -198,7 +198,7 @@ footer div a {
   color: #000000;
 }
 footer div a:hover {
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 h2 {
@@ -356,7 +356,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0d1b2a;
+  background: #0D1B2A;
   color: #ffffff;
   border-radius: 20px;
   cursor: pointer;
@@ -364,7 +364,7 @@ body {
 }
 .btn-gris:hover {
   background: #dedede;
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .container-form {
@@ -400,14 +400,14 @@ body {
   font-weight: 700;
 }
 .container-form a:hover {
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 .container-form a i {
   color: #4e4e4e;
   margin-right: 10px;
 }
 .container-form a i:hover {
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 .container-form form .campo,
 .container-form textarea {
@@ -435,7 +435,7 @@ body {
   font-size: 16px;
   border: none;
   outline: 0px;
-  background: #0d1b2a;
+  background: #0D1B2A;
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
@@ -443,7 +443,7 @@ body {
 }
 .container-form .btn-enviar:hover {
   background: #dedede;
-  color: #cbcbcb;
+  color: #E0E1DD;
 }
 
 .mapa {
