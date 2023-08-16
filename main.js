@@ -1,89 +1,57 @@
+let nombre = prompt("¡Bienvenido a la sección de stickers!\nIngrese su nombre para empezar a seleccionar nuestros productos:");
+alert(`Hola ${nombre}, presione OK para continuar`);
 
+const productos = [
+  { id: 1, nombre: 'Sticker Simple', precio: 100 },
+  { id: 2, nombre: 'Sticker Especial', precio: 150 },
+  { id: 3, nombre: 'Sticker Premium', precio: 200 },
+  { id: 4, nombre: 'Sticker Especial Premium', precio: 250 }
+];
 
-let nombre = prompt("Bienvenido a la web de nuestra gráfica, ingrese su nombre para empezar a seleccionar nuestros productos.");
+let productosDisponibles = 'Productos disponibles:\n\n';
+productos.forEach(producto => {
+  productosDisponibles += `${producto.id}: ${producto.nombre} - $${producto.precio}\n`;
+});
+alert(productosDisponibles);
 
-alert("Hola" + " " + nombre + ", presione ok para continuar");
+let seleccion;
+let productoSeleccionado;
 
+do {
+  seleccion = parseInt(prompt('Seleccione el número del producto que desee comprar:'));
+  productoSeleccionado = productos.find(producto => producto.id === seleccion);
 
+  if (!productoSeleccionado) {
+    alert('Producto no válido. Por favor, seleccione un producto válido.');
+  }
+} while (!productoSeleccionado);
 
-function seleccionarOpcionImprimir() {
+let cantidad;
+do {
+  cantidad = parseInt(prompt(`Seleccione la cantidad de unidades (mínimo 10) para ${productoSeleccionado.nombre}:`));
+} while (cantidad < 10);
 
-    let impresion = prompt("Ingrese '1' para impresion simple, '2' para impresion troquelada");
+const costoTotal = productoSeleccionado.precio * cantidad;
+alert(`Resumen de la compra:\n\nProducto: ${productoSeleccionado.nombre}\nCantidad: ${cantidad} unidades\nCosto total: $${costoTotal}`);
 
-    switch (impresion) {
-        case "1":
-            alert("Ha seleccionado impresion simple");
-            break;
+let entrada;
 
-        case "2":
-            alert("Ha seleccionado impresion troquelada");
-            break;
+do {
+  entrada = prompt("Ingrese SI para solicitar envío o NO para retirar por nuestro local");
 
-        default:
-            seleccionarOpcionImprimir()
-            break;
-    }
-}
+  switch (entrada) {
+    case "SI":
+      alert("Ha seleccionado la opción envío");
+      break;
 
+    case "NO":
+      alert("Ha seleccionado retirar por nuestro local");
+      break;
 
-let cantidad = parseInt(prompt("Ingrese cantidad de impresiones. Compra mínima: 10 unidades"));
+    default:
+      alert("Seleccione una opción correcta");
+      break;
+  }
+} while (entrada !== "SI" && entrada !== "NO");
 
-if (cantidad < 10) {
-    alert("Seleccione más de 10 unidades")
-}
-
-else if (cantidad > 10) {
-    alert("Excelete! Seleccione ok para seguir comprando...")
-}
-
-function calcularMetros() {
-    let cantidadProductos = parseInt(prompt("Si desea stickers ingrese la cantidad de diseños diferentes que desee:"));
-
-
-    if (isNaN(cantidadProductos) || cantidadProductos <= 0) {
-        alert("Por favor, ingrese una cantidad válida.");
-        return;
-    }
-
-    let metrosTotales = 0;
-
-    for (let i = 1; i <= cantidadProductos; i++) {
-        let metrosProducto = parseFloat(prompt(`Ingrese los metros de stickers que desee para el diseño ${i} :`));
-
-        if (isNaN(metrosProducto) || metrosProducto < 0) {
-            alert(`Ingrese una cantidad válida para el producto ${i}`)
-            return;
-        }
-
-        metrosTotales = metrosTotales + metrosProducto;
-    }
-
-    alert(`La cantidad total de metros de los ${cantidadProductos} productos seleccionados es de: ${metrosTotales}`);
-}
-
-calcularMetros();
-
-let entrada = prompt("Ingrese SI para solictar envío o NO para retirar por nuestro local");
-
-while (entrada != "ESC") {
-    switch (entrada) {
-        case "SI":
-            alert("Ha seleccionado la opción envío");
-            break;
-
-        case "NO":
-            alert("Ha seleccionado retirar por nuestro local");
-            break;
-
-        default:
-            alert("Seleccione una opción correta");
-            break;
-    }
-
-
-    entrada = prompt("Gracias por su compra. Ingrese ESC para salir");
-}
-
-
-
-
+alert("¡Gracias por su compra!");
