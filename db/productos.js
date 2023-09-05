@@ -30,14 +30,14 @@ export const productos = [
       id: 5, 
       nombre: "sticker base laca", 
       precio: 200, 
-      imagen: "https://mipegatina.club/materiales/blanco-clasico-laca/",
+      imagen: "https://mipegatina.club/wp-content/uploads/2022/12/Blanco-Con-Laca_1.png",
       categoria: "Stickers especiales"
     },
     { 
       id: 6, 
       nombre: "sticker gold", 
       precio: 400, 
-      img: "https://mipegatina.club/wp-content/uploads/2022/11/HoloGold_3.png",
+      img: "https://mipegatina.club/wp-content/uploads/2022/11/HoloGold_4.png",
       categoria: "Stickers premium"
     },
     { 
