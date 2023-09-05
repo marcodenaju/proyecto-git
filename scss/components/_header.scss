@@ -1,18 +1,16 @@
+// h1 {
+//     font-family:'Arial Narrow', Arial, sans-serif;
+//     font-size: 50px;
+//     color: #000000;
+// }
 
+// .navbar {
+//     font-family: $font-principal;
+//     position: sticky;
+//     top: 0;
+//     z-index: 1;
 
-h1 {
-    font-family:'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    color: #000000;
-}
-
-.navbar {
-    font-family: $font-principal;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-
-    & a:hover {
-        color: $color-hover;
-    }
-}
+//     & a:hover {
+//         color: $color-hover;
+//     }
+// }
