@@ -1,117 +1,117 @@
-// * {
-//     margin: 0%;
-//     padding: 0%;
-//     box-sizing: border-box;
-// }
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 
-// ul,
-// ol {
-//     list-style: none;
-// }
+ul,
+ol {
+    list-style: none;
+}
 
-// @font-face {
-//     font-family: ITCavant;
-//     src: url('../fonts/ITC\ Avant\ Garde\ Gothic\ Pro-Medium.otf');
-// }
-
-
-// $font-logo: 'Amatic SC', cursive;
-// $font-principal: 'ITCavant', sans-serif;
-// $font-titulo: 'ITCavant', sans-serif;
-// $color-titulo: #000000;
-// $color-hover: #E0E1DD;
-// $color-btn: #ffffff;
-
-// a {
-//     text-decoration: none;
-
-//     &:hover {
-//         color: $color-hover;
-//     }
-// }
+@font-face {
+    font-family: ITCavant;
+    src: url('../fonts/ITC\ Avant\ Garde\ Gothic\ Pro-Medium.otf');
+}
 
 
+$font-logo: 'Amatic SC', cursive;
+$font-principal: 'ITCavant', sans-serif;
+$font-titulo: 'ITCavant', sans-serif;
+$color-titulo: #000000;
+$color-hover: #E0E1DD;
+$color-btn: #ffffff;
 
-// %btn {
-//     padding: 15px;
-//     font-size: 16px;
-//     border: none;
-//     outline: 0px;
-//     background: $color-btn;
-//     color: #ffffff;
-//     border-radius: 20px;
-//     cursor: pointer;
-//     transition: all 300ms ease;
+a {
+    text-decoration: none;
 
-//     &:hover {
-//         background: #dedede;
-//         color: $color-hover;
-//     }
-// }
-
-// $grey: grey;
-// $black: black;
-// $white: white;
-
-// // -----------plantilla btn y extend------------
-
-// .btn {
-//     @extend %btn;
-
-//     &__ligth {
-//         background-color: aliceblue;
-//         border: none;
-//         color: azure;
-
-//         &:hover {
-//             background-color: aquamarine;
-//         }
-//     }
-
-//     &__black {
-//         background-color: black;
-//         color: beige;
-
-//         &:hover {
-//             background-color: bisque;
-//             color: $black;
-//         }
-//     }
-// }
-
-
-// // -----------mixins-----------
-
-// @mixin flexbox ($justify: center, $align: center) {
-//     display: flex;
-//     justify-content: $justify;
-//     align-items: $align;
-
-// }
-
-// .contenedor {
-//     @include flexbox();
-// }
-
-
-// @mixin color-tipo($color) {
-//     background-color: $color;
-
-//     @if lightness($color)>50 {
-//         color: black;
-//     }
-
-//     @else {
-//         color: white;
-//     }
-// }
-
-// header {
-//     @include color-tipo(white)
-// }
+    &:hover {
+        color: $color-hover;
+    }
+}
 
 
 
+%btn {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: $color-btn;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
 
-// /* comentarios con alt + shift + a */
-// /* o seleccionando: control + barra (/) */
+    &:hover {
+        background: #dedede;
+        color: $color-hover;
+    }
+}
+
+$grey: grey;
+$black: black;
+$white: white;
+
+// -----------plantilla btn y extend------------
+
+.btn {
+    @extend %btn;
+
+    &__ligth {
+        background-color: aliceblue;
+        border: none;
+        color: azure;
+
+        &:hover {
+            background-color: aquamarine;
+        }
+    }
+
+    &__black {
+        background-color: black;
+        color: beige;
+
+        &:hover {
+            background-color: bisque;
+            color: $black;
+        }
+    }
+}
+
+
+// -----------mixins-----------
+
+@mixin flexbox ($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+.contenedor {
+    @include flexbox();
+}
+
+
+@mixin color-tipo($color) {
+    background-color: $color;
+
+    @if lightness($color)>50 {
+        color: black;
+    }
+
+    @else {
+        color: white;
+    }
+}
+
+header {
+    @include color-tipo(white)
+}
+
+
+
+
+/* comentarios con alt + shift + a */
+/* o seleccionando: control + barra (/) */

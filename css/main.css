@@ -1,3 +1,71 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: ITCavant;
+  src: url("../fonts/ITC Avant Garde Gothic Pro-Medium.otf");
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #E0E1DD;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #ffffff;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.btn:hover {
+  background: #dedede;
+  color: #E0E1DD;
+}
+
+.btn__ligth {
+  background-color: aliceblue;
+  border: none;
+  color: azure;
+}
+.btn__ligth:hover {
+  background-color: aquamarine;
+}
+.btn__black {
+  background-color: black;
+  color: beige;
+}
+.btn__black:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: white;
+  color: black;
+}
+
+/* comentarios con alt + shift + a */
+/* o seleccionando: control + barra (/) */
 #carrito {
   display: none;
   position: fixed;
@@ -17,4 +85,59 @@
 .btn-custom {
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+.footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+footer div a {
+  color: #000000;
+}
+footer div a:hover {
+  color: #E0E1DD;
+}
+
+h2 {
+  font-size: 36px;
+  color: #000000;
+}
+
+h3,
+h4 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.texto-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-redes {
+  font-size: 36px;
+}
+
+.link-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */
