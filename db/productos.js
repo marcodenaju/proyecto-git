@@ -37,7 +37,7 @@ export const productos = [
       id: 6, 
       nombre: "STICKER GOLD", 
       precio: 400, 
-      img: "https://mipegatina.club/wp-content/uploads/2022/11/HoloGold_4.png",
+      imagen: "https://mipegatina.club/wp-content/uploads/2022/11/HoloGold_3.png",
       categoria: "Stickers premium"
     },
     { 
