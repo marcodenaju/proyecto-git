@@ -1,7 +1,7 @@
 import { comprarProducto } from "./carrito.js"
 
 
-const userLogin = document.getElementById("userLogin")
+// const userLogin = document.getElementById("userLogin")
 const divProductos = document.getElementById("productos")
 
 export let productosDisponibles = JSON.parse(localStorage.getItem("productos"))
@@ -19,7 +19,7 @@ export const generarCardsProductos = (productos) => {
     const { imagen, nombre, categoria, precio, id } = producto
      
       let card = document.createElement("div");
-      card.className = "producto";
+      card.className = "producto mt-5";
       card.innerHTML = `
       <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="${imagen}" alt="Card image cap">

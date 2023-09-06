@@ -1,6 +1,6 @@
 
 .footer {
-    background-color: #e9e9e9;
+    background-color: #f0f0f0;
     @include flexbox();
     flex-direction: column;
     text-align: center;
@@ -19,13 +19,13 @@ footer div a {
 
 h2 {
     font-size: 36px;
-    color: #000000;
+    color: white;
 }
 
 h3,
 h4 {
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .texto-redes {

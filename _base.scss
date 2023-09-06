@@ -19,7 +19,7 @@ $font-logo: 'Amatic SC', cursive;
 $font-principal: 'ITCavant', sans-serif;
 $font-titulo: 'ITCavant', sans-serif;
 $color-titulo: #000000;
-$color-hover: #E0E1DD;
+$color-hover: #dd7d38;
 $color-btn: #ffffff;
 
 a {
@@ -29,8 +29,6 @@ a {
         color: $color-hover;
     }
 }
-
-
 
 %btn {
     padding: 15px;
@@ -109,7 +107,6 @@ $white: white;
 header {
     @include color-tipo(white)
 }
-
 
 
 

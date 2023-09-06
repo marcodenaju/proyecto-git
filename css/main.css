@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #E0E1DD;
+  color: #dd7d38;
 }
 
 .btn {
@@ -33,7 +33,7 @@ a:hover {
 }
 .btn:hover {
   background: #dedede;
-  color: #E0E1DD;
+  color: #dd7d38;
 }
 
 .btn__ligth {
@@ -88,7 +88,7 @@ header {
 }
 
 .footer {
-  background-color: #e9e9e9;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,18 +103,18 @@ footer div a {
   color: #000000;
 }
 footer div a:hover {
-  color: #E0E1DD;
+  color: #dd7d38;
 }
 
 h2 {
   font-size: 36px;
-  color: #000000;
+  color: white;
 }
 
 h3,
 h4 {
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .texto-redes {
@@ -139,5 +139,112 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+.container-form {
+  margin-top: 60px;
+}
+.container-form h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: "ITCavant", sans-serif;
+  font-size: 40px;
+  color: #000000;
+}
+.container-form p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ITCavant", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #000000;
+  font-weight: 700;
+}
+.container-form a:hover {
+  color: #dd7d38;
+}
+.container-form a i {
+  color: #4e4e4e;
+  margin-right: 10px;
+}
+.container-form a i:hover {
+  color: #dd7d38;
+}
+.container-form form .campo,
+.container-form textarea {
+  width: 767px;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid color #000000;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form .campo textarea,
+.container-form textarea textarea {
+  width: 767px;
+  min-height: 140px;
+  max-height: 150px;
+  border: 1px solid color #000000;
+}
+.container-form form textarea {
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid color #000000;
+  outline: 0px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover {
+  background: #000000;
+  color: #dd7d38;
+}
+
+.mapa {
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 90px;
+  }
+  .container-form h2 {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .container-form p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .container-form a {
+    display: inline-block;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=main.css.map */
