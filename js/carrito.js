@@ -55,7 +55,7 @@ export const comprarProducto = (idProducto) => {
     }
     carrito = JSON.parse(sessionStorage.getItem("carrito"))
 
-    alert(`agregaste al carrito el producto ${nombre}`)
+    alert(`Agregaste al carrito el producto ${nombre}`)
 
 }
 
@@ -110,7 +110,7 @@ const dibujarFooter = () => {
 
         footCarrito.append(footer)
     }else{
-        footCarrito.innerHTML = "<h3>No hay producto en carrito</h3>"
+        footCarrito.innerHTML = "<h3>No hay productos en el carrito</h3>"
     }
 
 }

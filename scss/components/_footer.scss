@@ -1,0 +1,65 @@
+
+.footer {
+    background-color: #ffffff;
+    @include flexbox();
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+    gap: 50px;
+    flex-wrap: wrap
+}
+
+footer div a {
+    color: #000000;
+
+    &:hover {
+        color:$color-hover
+    }
+}
+
+h2 {
+    font-size: 36px;
+    color: #000000;
+}
+
+h3,
+h4 {
+    font-size: 16px;
+    color: #000000;
+}
+
+.texto-redes {
+    @include flexbox();
+}
+
+.list-redes {
+    font-size: 36px;
+}
+
+.link-redes {
+    @include flexbox();
+    gap: 10px;
+}
+
+// .texto-redes {
+//     display: none;
+// }
+
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // .texto-redes {
+    //     display: none;
+    // }
+
+}
+
+
+
+
+;
