@@ -23,13 +23,11 @@ export const generarCardsProductos = (productos) => {
       card.innerHTML = `
       <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="${imagen}" alt="Card image cap">
-      <div class="card-body">
-      <p class="card-title">${nombre}</p>
-      <p class="card-text">Categoria: ${categoria}</p>
-  
-      <p class="card-text">Precio: <b>$${precio}</b></p>
-      <button id="btn${id}" class="btn btn-dark">Comprar</button>
-  
+      <div class="card-body d-flex flex-column align-items-center justify-content-center">
+        <h5 class="card-title text-center">${nombre}</h5>
+        <p class="card-text text-center">Categoria: ${categoria}</p>
+        <p class="card-text text-center">Precio: <b>$${precio}</b></p>
+        <button id="btn${id}" class="btn btn-dark mt-2">Comprar</button>
       </div>
       </div>`;
   
