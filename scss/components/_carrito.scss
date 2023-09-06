@@ -1,8 +1,8 @@
-#filter__input{
-    display: block; 
-    margin: auto; 
-    width: 40%
-}
+// #filter__input{
+//     display: block; 
+//     margin: auto; 
+//     width: 40%
+// }
 
 #carrito{
     display: none;
@@ -18,4 +18,9 @@
 
 .text-white {
     fill: white;
+  }
+
+  .btn-custom {
+    background-color: black;
+    color: white;
   }

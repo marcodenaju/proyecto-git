@@ -28,7 +28,7 @@ export const generarCardsProductos = (productos) => {
       <p class="card-text">Categoria: ${categoria}</p>
   
       <p class="card-text">Precio: <b>$${precio}</b></p>
-      <button id="btn${id}" class="btn btn-primary">Comprar</button>
+      <button id="btn${id}" class="btn btn-dark">Comprar</button>
   
       </div>
       </div>`;

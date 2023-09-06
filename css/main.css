@@ -1,9 +1,3 @@
-#filter__input {
-  display: block;
-  margin: auto;
-  width: 40%;
-}
-
 #carrito {
   display: none;
   position: fixed;
@@ -18,4 +12,9 @@
 
 .text-white {
   fill: white;
+}
+
+.btn-custom {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
