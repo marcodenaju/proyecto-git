@@ -55,7 +55,14 @@ export const comprarProducto = (idProducto) => {
     }
     carrito = JSON.parse(sessionStorage.getItem("carrito"))
 
-    alert(`Agregaste al carrito el producto ${nombre}`)
+    Swal.fire({
+        icon: 'success',
+        title: 'Producto Agregado al Carrito',
+        text: `Agregaste al carrito el producto ${nombre}`,
+        toast: true,
+        customClass: {
+            confirmButton: 'btn-black-white'}
+    });
 
 }
 
