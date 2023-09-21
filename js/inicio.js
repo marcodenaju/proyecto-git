@@ -16,10 +16,13 @@ export const generarCardsProductos = (productos) => {
   
     productos.forEach((producto) => {
 
-    const { imagen, nombre, categoria, precio, id } = producto
-     
+      const { imagen, nombre, categoria, precio, id } = producto;
+
       let card = document.createElement("div");
       card.className = "producto mt-5";
+      card.style.marginBottom = "20px";
+      card.style.marginRight = "20px";
+      card.style.marginLeft = "20px";
       card.innerHTML = `
       <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="${imagen}" alt="Card image cap">
@@ -30,37 +33,11 @@ export const generarCardsProductos = (productos) => {
         <button id="btn${id}" class="btn btn-dark mt-2">Comprar</button>
       </div>
       </div>`;
-  
+      
       divProductos.appendChild(card);
-
-      const btnComprar = document.getElementById(`btn${id}`)
-      btnComprar.addEventListener("click", () => comprarProducto(id))
-  
-  
-    });
-  };
-
-
-// ========sweetalert==========
-
-  // Swal.fire({
-  //   title: 'Sweet!',
-  //   text: 'Modal with a custom image.',
-  //   imageUrl: 'https://unsplash.it/400/200',
-  //   imageWidth: 400,
-  //   imageHeight: 200,
-  //   imageAlt: 'Custom image',
-  // })
-
-// ==========toastify===========
-
-
-
-// Toastify({
-
-//   text: "This is a toast",
-  
-//   duration: 3000
-  
-//   }).showToast();
+      
+      const btnComprar = document.getElementById(`btn${id}`);
+      btnComprar.addEventListener("click", () => comprarProducto(id));
+      });
+}      
   

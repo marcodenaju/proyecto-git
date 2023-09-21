@@ -14,6 +14,7 @@ const footCarrito = document.getElementById("totales")
 const btnCarrito = document.getElementById("btnCarrito")
 
 const carritoTable = document.getElementById("carrito")
+carritoTable.classList.add("carrito-table");
 
 
 btnCarrito.addEventListener("click", () => {    
@@ -67,38 +68,37 @@ export const comprarProducto = (idProducto) => {
 }
 
 const dibujarCarrito = () => {
+    listaCarrito.innerHTML = '';
 
-        listaCarrito.innerHTML = ''
     carrito.forEach(producto => {
-        const { imagen, nombre, cantidad, precio, id } = producto
-        let body = document.createElement("tr")
-
-        body.className = "producto__carrito"
+        const { imagen, nombre, cantidad, precio, id } = producto;
+        let body = document.createElement("tr");
+        body.className = "producto__carrito";
 
         body.innerHTML = `
-        <th><img id="fotoProductoCarrito" src="${imagen}" class="card-img-top" style="width:40%; height: 30%"</th>
-        <td>${nombre}</td>
-        <td>${cantidad}</td>
-        <td>${precio /cantidad}</td>
-        <td>${precio}</td>
-        <td>
-        <button id="+${id}" class="btn btn-success">+</button>
-        <button id="-${id}" class="btn btn-danger">-</button>
-        </td>
-        `
+            <th><img id="fotoProductoCarrito" src="${imagen}" class="card-img-top" style="width:40%; height: 30%"</th>
+            <td>${nombre}</td>
+            <td>${cantidad}</td>
+            <td>${precio / cantidad}</td>
+            <td>${precio}</td>
+            <td>
+                <button id="+${id}" class="btn btn-success btn-aumentar">+</button>
+                <button id="-${id}" class="btn btn-danger btn-restar">-</button>
+            </td>
+        `;
 
-        listaCarrito.append(body)
-        
-        const btnAgregar = document.getElementById(`+${id}`)
-        const btnRestar = document.getElementById(`-${id}`)
+        listaCarrito.append(body);
 
-        btnAgregar.addEventListener("click", () => aumentarCantidad(id))
-        btnRestar.addEventListener("click", () => restarCantidad(id))
-        
+        const btnAgregar = document.getElementById(`+${id}`);
+        const btnRestar = document.getElementById(`-${id}`);
+
+        btnAgregar.addEventListener("click", () => aumentarCantidad(id));
+        btnRestar.addEventListener("click", () => restarCantidad(id));
     });
 
-    dibujarFooter()
-}
+    dibujarFooter();
+};
+
 
 const dibujarFooter = () => {
 
