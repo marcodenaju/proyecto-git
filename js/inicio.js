@@ -8,22 +8,23 @@ export let productosDisponibles = JSON.parse(localStorage.getItem("productos"))
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    generarCardsProductos(productosDisponibles)
+  generarCardsProductos(productosDisponibles)
 })
 
 export const generarCardsProductos = (productos) => {
-    divProductos.innerHTML = "";
-  
-    productos.forEach((producto) => {
+  divProductos.innerHTML = "";
 
-      const { imagen, nombre, categoria, precio, id } = producto;
+  productos.forEach((producto) => {
 
-      let card = document.createElement("div");
-      card.className = "producto mt-5";
-      card.style.marginBottom = "20px";
-      card.style.marginRight = "20px";
-      card.style.marginLeft = "20px";
-      card.innerHTML = `
+    const { imagen, nombre, categoria, precio, id } = producto;
+
+    let card = document.createElement("div");
+    card.className = "producto mt-5";
+    card.style.marginTop = "20px";
+    card.style.marginBottom = "20px";
+    card.style.marginRight = "20px";
+    card.style.marginLeft = "20px";
+    card.innerHTML = `
       <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="${imagen}" alt="Card image cap">
       <div class="card-body d-flex flex-column align-items-center justify-content-center">
@@ -33,11 +34,20 @@ export const generarCardsProductos = (productos) => {
         <button id="btn${id}" class="btn btn-dark mt-2">Comprar</button>
       </div>
       </div>`;
-      
-      divProductos.appendChild(card);
-      
-      const btnComprar = document.getElementById(`btn${id}`);
-      btnComprar.addEventListener("click", () => comprarProducto(id));
-      });
-}      
-  
+
+    divProductos.appendChild(card);
+
+    const btnComprar = document.getElementById(`btn${id}`);
+    btnComprar.addEventListener("click", () => comprarProducto(id));
+  });
+}
+
+
+let productos = [];
+
+fetch("./js/productos.json")
+  .then(response => response.json())
+  .then(data => {
+    productos = data;
+    console.log(productos)
+  });

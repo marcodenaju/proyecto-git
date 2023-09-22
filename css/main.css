@@ -104,7 +104,7 @@ header {
 }
 
 .carrito-table th, .carrito-table td {
-  padding: 8px;
+  padding: 5px;
   text-align: center;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -112,7 +112,7 @@ header {
 }
 
 .footer {
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
